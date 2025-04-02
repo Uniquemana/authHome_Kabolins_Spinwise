@@ -19,6 +19,7 @@
 ## Test Environment  
 - **Operating System:** MacOS M3 Sonoma
 - **Browser/Version: Chromium 132 / Opera 117.0.5408.53** 
+- **Other Tools/Dependencies:** [Insert additional tools or dependencies]  
 
 ---
 
@@ -44,7 +45,7 @@ Display a success message: "You have registered successfully!"
 
 | Test Case ID | Test Case Description | Steps to Reproduce | Expected Result | Actual Result | Status (Pass/Fail) | Comments |
 |--------------|------------------------|---------------------|-----------------|---------------|--------------------|----------|
-| TC-001       | Happy Path Registration form | Meet all the Registration form field requirements | Expect to return code 200 with a success message  | System returns code 200 with a message "You have registered successfully!" | Pass | |
+| TC-001       | Happy Path Registration form | Meet all the Registration form field requirements and submit the form | Expect to return code 200 with a success message  | System returns code 200 with a message "You have registered successfully!" | Pass | |
 | TC-002       | Trigger input validation error on every input field  | Username using 2 chars, email doesnt meet the format, password length < 8, Email field Invalid email format, password confirm does not match | Input field validation errors triggered | Username: "Username must be 3-20 alphanumeric characters.", Password: "Password must be at least 8 characters with 1 uppercase, 1 lowercase, and 1 number.", Confirm password "Passwords do not match." | Pass | Front-end validated email field first, and only after repeated form submission the other fields were validated |
 | TC-003       | Boundary tests on username and password fields | Username <3 & >20, Password <8 & infinite | Username and Passford fields accept values within their stated range | Username only accepts 3 - 20 incl., Password only 8 - infinite | Pass |
 | TC-004       | Username & Password special character / absence of requiements test | user_name, user:name, uѕer123(contains cirylic 's'),  password1, PASSWORD1, Password, Pass1, 12345678, A1b2C3d4, Password1, ValidPass9, SecureP4ss, Test1234A, P4sswørd, P@ssword1, P4$$W0rd, P a s s w o r d 1 | expect the system to behave according to the error description of the use of characters | System does behave according to the error description of the use of characters | Pass | |
