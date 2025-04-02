@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { RegisterPage } from '../authHomeRegistration.page';
+import { RegisterPage } from './authHomeRegistration.page';
 
 const userData = {
   username: "TestUser",
