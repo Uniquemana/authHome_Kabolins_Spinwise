@@ -19,7 +19,6 @@
 ## Test Environment  
 - **Operating System:** MacOS M3 Sonoma
 - **Browser/Version: Chromium 132 / Opera 117.0.5408.53** 
-- **Other Tools/Dependencies:** [Insert additional tools or dependencies]  
 
 ---
 
